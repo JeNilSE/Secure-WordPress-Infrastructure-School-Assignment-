@@ -1,4 +1,4 @@
-# Secure WordPress Infrastructure (2-Tier Architecture)
+# Secure WordPress Infrastructure
 
 ## 🌄 Project Overview
 This project shows how I set up a secure Linux infrastructure for WordPress. Instead of installing everything on a single server, I separated the Web Server and the Database Server to improve security and performance.
