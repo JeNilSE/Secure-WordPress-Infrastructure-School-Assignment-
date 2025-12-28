@@ -1,7 +1,7 @@
 # Secure WordPress Infrastructure (2-Tier Architecture)
 
-## 📌 Project Overview
-This project shows how to set up a secure Linux infrastructure for WordPress. Instead of installing everything on a single server, I separated the Web Server and the Database Server to improve security and performance.
+## 🌄 Project Overview
+This project shows how I set up a secure Linux infrastructure for WordPress. Instead of installing everything on a single server, I separated the Web Server and the Database Server to improve security and performance.
 
 ![WordPress Live Site](wordpress-sida-2.png)
 
@@ -10,7 +10,7 @@ This project shows how to set up a secure Linux infrastructure for WordPress. In
 * **Protection:** Block hackers with Firewalls and Fail2Ban.
 * **Encryption:** Use SSL/TLS to encrypt traffic.
 
-## 🏗️ Architecture
+##  🔧 The Build
 The setup consists of two separate Virtual Machines (VMs) on a private network:
 
 * **VM 1: Web Server (`wp-web`)** - 10.0.2.7
@@ -23,8 +23,8 @@ The setup consists of two separate Virtual Machines (VMs) on a private network:
 **Why split them up?**
 By running the database on a separate server, I reduce the risk. If someone hacks the web server, they don't automatically get access to the database files. It also makes it easier to troubleshoot and upgrade each server individually.
 
-## 🛡️ Security Measures
-Here are the specific tools and configs I used to harden the servers:
+## 🔒 Security Measures
+Here are the tools and configs I used to harden the servers:
 
 ### 1. Firewall (UFW)
 I configured **UFW** (Uncomplicated Firewall) on both servers to block all incoming traffic by default.
@@ -46,11 +46,11 @@ I generated a **Self-Signed Certificate** for Apache. This ensures that all traf
 ![TLS Verification](tls-wp-web.png)
 *(Image: OpenSSL showing the active certificate)*
 
-## 🛠️ Tech Stack
+## 📚 Tech Stack
 * **Virtualization:** Oracle VirtualBox
 * **OS:** Ubuntu Server
 * **Software:** Apache, MariaDB, WordPress
 * **Security:** UFW, Fail2Ban, OpenSSL
 
 ---
-*Created by [Jesper Nilsson](https://github.com/JeNilSE)*
+*Created by [Me](https://github.com/JeNilSE)*
